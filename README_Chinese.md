@@ -19,7 +19,9 @@
 ## 运行
 
 ### 1、数据集下载
+[百度网盘](https://pan.baidu.com/s/1re9qP0sBjZ8DGerNdjDGVQ) 提取码：u5pb
 
+文件下载后解压
 ### 2、预训练
 使用少量标注图片对模型进行预训练</br>
 `python main.py --dataset <dataset-name> --label 700.txt`
