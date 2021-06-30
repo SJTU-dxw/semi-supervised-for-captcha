@@ -1,6 +1,6 @@
 # 半监督学习识别验证码
 
-本项目致力于使用少量标注验证码图片，快速突破各种文本型验证码。在使用少量标注图片和大量未标注图片的条件下，对文本型验证码进行识别。
+本项目是《A Semi-supervised Deep Learning-Based Solver for Breaking Text-Based CAPTCHAs》的官方实现。致力于使用少量标注验证码图片，快速突破各种文本型验证码。在使用少量标注图片和大量未标注图片的条件下，对文本型验证码进行识别。
 </br>
 ![image](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/images/1.png)
 </br>
