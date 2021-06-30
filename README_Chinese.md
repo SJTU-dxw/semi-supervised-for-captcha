@@ -13,19 +13,43 @@
 
 ## 模型
 模型由CNN+Seq2Seq组成，由CNN提取特征，Seq2Seq将这些特征翻译为验证码序列
-### CNN
-CNN模型由ResBlk和Maxpooling组成，将64X128的验证码图片提取为32个特征向量，代表验证码图片从左到右的信息
-</br>
-![image](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/images/3.png)
-</br>
-### Seq2Seq
-Seq2Seq模型增加了注意力机制
-</br>
-![image](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/images/4.png)
-</br>
 ## 半监督学习
-[Mean-Teacher]()是一种非常有效的半监督学习算法，本项目对其进行拆分为两阶段训练。第一阶段仅使用少量标注图片进行预训练，第二阶段再结合Mean-Teacher方法进行半监督训练
+[Mean-Teacher](https://github.com/CuriousAI/mean-teacher)是一种非常有效的半监督学习算法，本项目对其进行拆分为两阶段训练。第一阶段仅使用少量标注图片进行预训练，第二阶段再结合Mean-Teacher方法进行半监督训练
 
 ## 运行
 
+### 1、数据集下载
 
+### 2、预训练
+使用少量标注图片对模型进行预训练</br>
+`python main.py --dataset <dataset-name> --label 700.txt`
+### 3、第二阶段训练
+使用半监督学习算法对预训练的模型进行训练</br>
+`python main_mean_teacher.py --dataset <dataset-name> --label 700.txt`
+
+也可以直接运行go.sh
+``` shell
+set -e
+
+python main.py --dataset google
+python main.py --dataset ganji-1
+python main.py --dataset ganji-2
+python main.py --dataset sina
+python main.py --dataset weibo
+python main.py --dataset apple
+python main.py --dataset 360
+python main.py --dataset yandex
+python main.py --dataset wikipedia
+
+python main_mean_teacher.py --dataset google
+python main_mean_teacher.py --dataset ganji-1
+python main_mean_teacher.py --dataset ganji-2
+python main_mean_teacher.py --dataset sina
+python main_mean_teacher.py --dataset weibo
+python main_mean_teacher.py --dataset apple
+python main_mean_teacher.py --dataset 360
+python main_mean_teacher.py --dataset yandex
+python main_mean_teacher.py --dataset wikipedia
+```
+
+## 结果
