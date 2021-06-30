@@ -1,6 +1,7 @@
 # 半监督学习识别验证码
 
 本项目致力于使用少量标注验证码图片，快速突破各种文本型验证码。
+![image](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/images/1.png)
 
 ## 模型
 
