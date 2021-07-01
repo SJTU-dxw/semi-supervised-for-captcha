@@ -1,7 +1,8 @@
 # semi-supervised-for-captcha
 
 This repository is the official implementation of "A Semi-supervised Deep Learning-Based Solver for Breaking Text-Based CAPTCHAs". Under the condition of using a small number of labeled pictures and a large number of unlabeled pictures, the text-based Captchas are recognized.
-</br>[中文版ReadMe](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/README_Chinese.md)
+
+[中文版ReadMe](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/README_Chinese.md)
 
 </br>
 ![image](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/images/1.png)
