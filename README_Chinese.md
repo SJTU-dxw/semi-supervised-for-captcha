@@ -18,7 +18,7 @@
 
 ## 模型
 [百度网盘](https://pan.baidu.com/s/1yNomSJc9tjq76HfCcupOfw) 提取码：q5e6</br>
-[OneDrive](https://sjtueducn-my.sharepoint.com/:u:/g/personal/2594306528_sjtu_edu_cn/ETsYouBCbxlKk7FPo-9rafwBJQL7gAwZrUXxYTJXlfx0mg?e=TCp5sl)
+[OneDrive](https://sjtueducn-my.sharepoint.com/:u:/g/personal/2594306528_sjtu_edu_cn/EYYSiq8JP2hLlndRv0d68XIBJRjj7m9PtEOeyIC5xcLCTQ?e=9RHAiq)
 
 ## 训练
 
@@ -61,4 +61,6 @@ python main_mean_teacher.py --dataset wikipedia
 
 ## 结果
 
-
+|验证码|阶段一准确率|阶段二准确率|
+|-----|------------|-----------|
+|||
