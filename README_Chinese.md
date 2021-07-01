@@ -81,3 +81,6 @@ python main_mean_teacher.py --dataset wikipedia
 阶段二：
 ![image](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/result/MT_360_700.txt.png)
 </br>
+
+## 联系
+如有任何问题，请直接提问，或者联系邮箱2594306528@sjtu.edu.cn
