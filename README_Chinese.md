@@ -63,4 +63,18 @@ python main_mean_teacher.py --dataset wikipedia
 
 |验证码|阶段一准确率|阶段二准确率|
 |-----|------------|-----------|
-|||
+|google|19.6%|31.2%|
+|ganji-1|93.4%|97.4%|
+|ganji-2|88.4%|96.0%|
+|sina|89.3%|92.1%|
+|weibo|95.4%|96.1%|
+|yandex|64.7%|78.5%|
+|360|50.9%|70.0%|
+|wikipedia|93.4%|97.0%|
+|apple|73.4%|85.6%|
+
+举例来说，以360的验证码为例，两阶段的训练过程如下
+</br>
+![image](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/results/360_700.txt.png)
+![image](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/results/MT_360_700.txt.png)
+</br>
