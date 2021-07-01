@@ -75,6 +75,9 @@ python main_mean_teacher.py --dataset wikipedia
 
 举例来说，以360的验证码为例，两阶段的训练过程如下
 </br>
+阶段一：
 ![image](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/result/360_700.txt.png)
+</br>
+阶段二：
 ![image](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/result/MT_360_700.txt.png)
 </br>
