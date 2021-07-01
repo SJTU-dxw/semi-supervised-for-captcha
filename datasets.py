@@ -26,10 +26,10 @@ else:
 def load_datasets(args):
     label_dict = get_label_dict(args)
 
-    train_filenames = glob.glob("../final/dataset/" + args.dataset + "/train/*.*")
+    train_filenames = glob.glob("./dataset/" + args.dataset + "/train/*.*")
     train_filenames = [train_filename for train_filename in train_filenames if
                        train_filename.split(splitter_token)[-1] in label_dict]
-    test_filenames = glob.glob("../final/dataset/" + args.dataset + "/test/*.*")
+    test_filenames = glob.glob("./dataset/" + args.dataset + "/test/*.*")
 
     dataloader_train, id2token = get_dataloader(train_filenames, label_dict, args, train=True, label=True)
     dataloader_test, _ = get_dataloader(test_filenames, label_dict, args, train=False, label=True)
@@ -39,14 +39,14 @@ def load_datasets(args):
 def load_datasets_mean_teacher(args):
     label_dict = get_label_dict(args)
 
-    train_filenames = glob.glob("../final/dataset/" + args.dataset + "/train/*.*") + glob.glob(
-        "../final/dataset/" + args.dataset + "/buchong/*.*")
+    train_filenames = glob.glob("./dataset/" + args.dataset + "/train/*.*") + glob.glob(
+        "./dataset/" + args.dataset + "/buchong/*.*")
     labeled_train_filenames = [train_filename for train_filename in train_filenames if
                                train_filename.split(splitter_token)[-1] in label_dict]
     nolabeled_train_filenames = [train_filename for train_filename in train_filenames if
                                  train_filename.split(splitter_token)[-1] not in label_dict]
     nolabeled_train_filenames = random.sample(nolabeled_train_filenames, args.unlabeled_number)
-    test_filenames = glob.glob("../final/dataset/" + args.dataset + "/test/*.*")
+    test_filenames = glob.glob("./dataset/" + args.dataset + "/test/*.*")
 
     dataloader_train_labeled, id2token = get_dataloader(labeled_train_filenames, label_dict, args, train=True,
                                                         label=True)
@@ -59,7 +59,7 @@ def load_datasets_mean_teacher(args):
 
 
 def get_label_dict(args):
-    label_path = '../final/dataset/' + args.dataset + '/label/' + args.label
+    label_path = './dataset/' + args.dataset + '/label/' + args.label
     f = open(label_path, 'r')
     lines = f.read().strip().split("\n")
     label_dict = {line.split(" ")[0]: line.split(" ")[1] for line in lines}
