@@ -7,7 +7,7 @@ python main.py --dataset sina
 python main.py --dataset weibo
 python main.py --dataset apple
 python main.py --dataset 360
-python main.py --dataset yandex
+python main.py --dataset yandex --lr 0.03
 python main.py --dataset wikipedia
 
 python main_mean_teacher.py --dataset google
