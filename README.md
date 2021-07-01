@@ -4,10 +4,6 @@ This repository is the official implementation of "A Semi-supervised Deep Learni
 
 [中文版ReadMe](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/README_Chinese.md)
 
-</br>
-![image](https://github.com/2594306528/semi-supervised-for-captcha/blob/main/images/1.png)
-</br>
-
 ## Introduction
 This project uses the CNN+Seq2Seq model and the semi-supervised learning framework called Mean-Teacher to perform lightweight recognition of text-based Captchas.
 </br>
