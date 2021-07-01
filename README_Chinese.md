@@ -16,7 +16,11 @@
 ## 半监督学习
 [Mean-Teacher](https://github.com/CuriousAI/mean-teacher)是一种非常有效的半监督学习算法，本项目对其进行拆分为两阶段训练。第一阶段仅使用少量标注图片进行预训练，第二阶段再结合Mean-Teacher方法进行半监督训练
 
-## 运行
+## 模型
+[百度网盘](https://pan.baidu.com/s/1yNomSJc9tjq76HfCcupOfw) 提取码：q5e6</br>
+[OneDrive](https://sjtueducn-my.sharepoint.com/:u:/g/personal/2594306528_sjtu_edu_cn/ETsYouBCbxlKk7FPo-9rafwBJQL7gAwZrUXxYTJXlfx0mg?e=TCp5sl)
+
+## 训练
 
 ### 1、数据集下载
 [百度网盘](https://pan.baidu.com/s/1re9qP0sBjZ8DGerNdjDGVQ) 提取码：u5pb</br>
@@ -56,3 +60,5 @@ python main_mean_teacher.py --dataset wikipedia
 ```
 
 ## 结果
+
+
