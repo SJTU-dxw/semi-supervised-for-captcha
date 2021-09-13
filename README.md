@@ -17,14 +17,10 @@ The model is composed of a CNN and a Seq2Seq model. Features are extracted by CN
 [Mean-Teacher](https://github.com/CuriousAI/mean-teacher) is a very effective semi-supervised learning algorithm. This project splits it into two-stage training. The first stage uses only a small number of labeled images for pre-training, and the second stage combines the Mean-Teacher method for semi-supervised training.
 
 ## Trained Model
-[Baidu Netdisk](https://pan.baidu.com/s/1yNomSJc9tjq76HfCcupOfw) Extraction code: q5e6</br>
-[OneDrive](https://sjtueducn-my.sharepoint.com/:u:/g/personal/2594306528_sjtu_edu_cn/EYYSiq8JP2hLlndRv0d68XIBJRjj7m9PtEOeyIC5xcLCTQ?e=9RHAiq)
 
 ## Training
 
 ### 1、Download Dataset
-[Baidu Netdisk](https://pan.baidu.com/s/1re9qP0sBjZ8DGerNdjDGVQ) Extraction code: u5pb</br>
-[OneDrive](https://sjtueducn-my.sharepoint.com/:u:/g/personal/2594306528_sjtu_edu_cn/ETsYouBCbxlKk7FPo-9rafwBJQL7gAwZrUXxYTJXlfx0mg?e=TCp5sl)
 
 Unzip the file after downloading.
 ### 2、Pretrain Stage
