@@ -21,7 +21,7 @@ The model is composed of a CNN and a Seq2Seq model. Features are extracted by CN
 ## Training
 
 ### 1、Download Dataset
-
+https://drive.google.com/file/d/1iL4me0ispkHiNsie6Fr_HrnfRh7PsK8y/view?usp=sharing
 Unzip the file after downloading.
 ### 2、Pretrain Stage
 Pre-train the model with a small number of labeled pictures.</br>
